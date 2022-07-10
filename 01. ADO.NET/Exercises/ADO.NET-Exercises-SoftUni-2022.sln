@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Villain", "Villain-Names\Villain.csproj", "{DC0A134E-A877-452B-8C7D-F0E1AB0AC9F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Add-Minion", "Add-Minion\Add-Minion.csproj", "{234D3B84-CCDC-496D-8E70-9BAC69DDBD07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Add-Minion", "Add-Minion\Add-Minion.csproj", "{234D3B84-CCDC-496D-8E70-9BAC69DDBD07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

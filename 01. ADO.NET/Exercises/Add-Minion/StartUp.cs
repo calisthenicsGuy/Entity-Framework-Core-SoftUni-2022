@@ -7,7 +7,7 @@ namespace Add_Minion
         static void Main(string[] args)
         {
             Engine engine = new Engine(Config.connectionString);
-            engine.Run();
+            Console.WriteLine(engine.Run());
         }
     }
 }
