@@ -31,7 +31,7 @@
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-0RGQONS; Database=SoftUni; Integrated Security=True;");
+                optionsBuilder.UseSqlServer(Config.ConnectionString);
             }
         }
 
