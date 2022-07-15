@@ -5,3 +5,8 @@ The course "Entity Framework Core" follows in detail the work with the ORM techn
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 01. [**ADO.NET**](https://github.com/calisthenicsGuy/Entity-Framework-Core-SoftUni-2022/tree/main/01.%20ADO.NET/Lab)
+02. [**ORM Fundamentals**](https://github.com/calisthenicsGuy/Entity-Framework-Core-SoftUni-2022/tree/main/02.%20ORM%20Fundamentals/Demo)
+03. [**Entity Framework Introduction**](https://github.com/calisthenicsGuy/Entity-Framework-Core-SoftUni-2022/tree/main/03.%20Entity%20Framework%20Introduction)
+04. [**Entity Relations**](https://github.com/calisthenicsGuy/Entity-Framework-Core-SoftUni-2022/tree/main/04.%20Entity%20Relations)
+05. [**LINQ**](https://github.com/calisthenicsGuy/Entity-Framework-Core-SoftUni-2022/tree/main/05.%20LINQ)
+06. [**Advanced Querying**](https://github.com/calisthenicsGuy/Entity-Framework-Core-SoftUni-2022/tree/main/06.%20Advanced%20Querying/Demo)
