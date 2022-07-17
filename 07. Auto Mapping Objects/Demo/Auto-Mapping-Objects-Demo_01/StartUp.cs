@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using Auto_Mapping_Objects_Demo_01.Data.Models;
 using AutoMapper.QueryableExtensions;
+using Auto_Mapping_Objects_Demo_01.MapperProfiles;
 
 namespace Auto_Mapping_Objects_Demo_01
 {
@@ -51,11 +52,9 @@ namespace Auto_Mapping_Objects_Demo_01
 
             var config = new MapperConfiguration(config =>
             {
-                config.CreateMap<Employee, EmployeeInfo>();
-                config.CreateMap<Project, ProjectInfo>();
-                config.CreateMap<Department, DepartmentInfo>()
-                      .ForMember(x => x.Manager, options => 
-                      options.MapFrom(x => $"{x.Manager.FirstName} {x.Manager.LastName}")); // Custom Mapping 
+                config.AddProfile<EmployeeInfoDtoProfile>();
+                config.AddProfile<ProjectInfoDtoProfile>();
+                config.AddProfile<DepartmentInfoDtoProfile>();
             });
             var mapper = config.CreateMapper();
 
