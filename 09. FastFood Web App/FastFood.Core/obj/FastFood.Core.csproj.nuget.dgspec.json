@@ -1,0 +1,336 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Core\\FastFood.Core.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Core\\FastFood.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Core\\FastFood.Core.csproj",
+        "projectName": "FastFood.Core",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Core\\FastFood.Core.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Data\\FastFood.Data.csproj": {
+                "projectPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Data\\FastFood.Data.csproj"
+              },
+              "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Services.Models\\FastFood.Services.Models.csproj": {
+                "projectPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Services.Models\\FastFood.Services.Models.csproj"
+              },
+              "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Services\\FastFood.Services.csproj": {
+                "projectPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Services\\FastFood.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Data\\FastFood.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Data\\FastFood.Data.csproj",
+        "projectName": "FastFood.Data",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Data\\FastFood.Data.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Models\\FastFood.Models.csproj": {
+                "projectPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Models\\FastFood.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Models\\FastFood.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Models\\FastFood.Models.csproj",
+        "projectName": "FastFood.Models",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Models\\FastFood.Models.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Services.Models\\FastFood.Services.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Services.Models\\FastFood.Services.Models.csproj",
+        "projectName": "FastFood.Services.Models",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Services.Models\\FastFood.Services.Models.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Services.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Services\\FastFood.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Services\\FastFood.Services.csproj",
+        "projectName": "FastFood.Services",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Services\\FastFood.Services.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Data\\FastFood.Data.csproj": {
+                "projectPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Data\\FastFood.Data.csproj"
+              },
+              "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Services.Models\\FastFood.Services.Models.csproj": {
+                "projectPath": "C:\\Users\\HP\\source\\repos\\ENTITY FRAMEWORK CORE\\Entity-Framework-Core-FastFood-Restaurant\\FastFood.Services.Models\\FastFood.Services.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
