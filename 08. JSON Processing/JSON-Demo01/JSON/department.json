@@ -1,0 +1,17 @@
+{
+  "DepartmentName": "IT",
+  "Employees": [
+    {
+      "Name": "Gosho",
+      "Age": 30,
+      "Job": "C# Developer",
+      "DateTime": "2022-07-18T14:06:19.556824+03:00"
+    },
+    {
+      "Name": "Pesho",
+      "Age": 20,
+      "Job": "JS Developer",
+      "DateTime": "2022-07-18T14:06:19.7463613+03:00"
+    }
+  ]
+}
