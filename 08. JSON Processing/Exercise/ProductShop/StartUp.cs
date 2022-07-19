@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using Newtonsoft.Json;
 using ProductShop.Data;
 using ProductShop.DTOs.Categories;
@@ -42,6 +43,10 @@ namespace ProductShop
             /* string jsonInput = File.ReadAllText(@"..\..\..\Datasets\categories-products.json");
             Console.WriteLine(ImportCategoryProducts(dbContext, jsonInput)); */
 
+            // P02:
+            // File.WriteAllText(@"..\..\..\ExportResults\products-in-range.json", GetProductsInRange(dbContext));
+            // File.WriteAllText(@"..\..\..\ExportResults\users-sold-products.json", GetSoldProducts(dbContext));
+            // File.WriteAllText(@"..\..\..\ExportResults\users-and-products.json", GetUsersWithProducts(dbContext));
 
 
             dbContext.Dispose();
@@ -120,5 +125,61 @@ namespace ProductShop
 
             return $"Successfully imported {categoryProducts.Count}";
         }
-    }
+
+        // Problem 02: Export Data -> Export Products in Range
+        public static string GetProductsInRange(ProductShopContext context)
+        {
+            //ExportProductDto[] productDtos = context.Products
+            //    .Where(p => p.Price >= 500 && p.Price <= 1000)
+            //    .OrderBy(p => p.Price)
+            //    .ProjectTo<ExportProductDto>()
+            //    .ToArray();
+
+            var productDtos = context.Products
+                .Where(p => p.Price >= 500 && p.Price <= 1000)
+                .OrderBy(p => p.Price)
+                .Select(p => new
+                {
+                    name = p.Name,
+                    price = p.Price,
+                    seller = $"{p.Seller.FirstName} {p.Seller.LastName}"
+                });
+
+            return JsonConvert.SerializeObject(productDtos, Formatting.Indented);
+        }
+
+        // Problem 02: Export Data -> Export Sold Products
+        public static string GetSoldProducts(ProductShopContext context)
+        {
+            ExportUserProductsDto[] users = context.Users
+                .Where(u => u.ProductsSold.Any(p => p.BuyerId.HasValue))
+                .OrderBy(u => u.LastName)
+                .ThenBy(u => u.FirstName)
+                .ProjectTo<ExportUserProductsDto>()
+                .ToArray();
+
+            return JsonConvert.SerializeObject(users, Formatting.Indented);
+        }
+
+        // Problem 02: Export Data -> Export Categories by Products Count
+        public static string GetCategoriesByProductsCount(ProductShopContext context)
+        {
+            ExportCategoriesByProductsCountDto[] categories = context.Categories
+                .ProjectTo<ExportCategoriesByProductsCountDto>()
+                .ToArray();
+
+            return JsonConvert.SerializeObject(categories.OrderBy(c => c.ProductsCount), Formatting.Indented);
+        }
+
+        // Problem 02: Export Data -> Export Users and Products
+        public static string GetUsersWithProducts(ProductShopContext context)
+        {
+            ExportUserWithHisProductsDto[] users = context.Users
+                .Where(u => u.ProductsSold.Any(p => p.BuyerId.HasValue))
+                .OrderByDescending(u => u.ProductsSold.Count)
+                .ProjectTo<ExportUserWithHisProductsDto>()
+                .ToArray();
+
+            return JsonConvert.SerializeObject(users, Formatting.Indented);
+        }
 }
