@@ -46,7 +46,7 @@ namespace ProductShop
             // P02:
             // File.WriteAllText(@"..\..\..\ExportResults\products-in-range.json", GetProductsInRange(dbContext));
             // File.WriteAllText(@"..\..\..\ExportResults\users-sold-products.json", GetSoldProducts(dbContext));
-             File.WriteAllText(@"..\..\..\ExportResults\users-and-products.json2", GetUsersWithProducts(dbContext));
+            // File.WriteAllText(@"..\..\..\ExportResults\users-and-products.json", GetUsersWithProducts(dbContext));
 
 
             dbContext.Dispose();
