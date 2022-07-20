@@ -20,7 +20,7 @@ namespace ProductShop
         private static IMapper mapper;
         public static void Main(string[] args)
         {
-            mapper = new Mapper(new MapperConfiguration(config => 
+            mapper = new Mapper(new MapperConfiguration(config =>
             {
                 config.AddProfile<ProductShopProfile>();
             }));
@@ -46,7 +46,7 @@ namespace ProductShop
             // P02:
             // File.WriteAllText(@"..\..\..\ExportResults\products-in-range.json", GetProductsInRange(dbContext));
             // File.WriteAllText(@"..\..\..\ExportResults\users-sold-products.json", GetSoldProducts(dbContext));
-            // File.WriteAllText(@"..\..\..\ExportResults\users-and-products.json", GetUsersWithProducts(dbContext));
+             File.WriteAllText(@"..\..\..\ExportResults\users-and-products.json2", GetUsersWithProducts(dbContext));
 
 
             dbContext.Dispose();
@@ -56,7 +56,7 @@ namespace ProductShop
         // Problem 01: Import Data -> Import Users
         public static string ImportUsers(ProductShopContext context, string inputJson)
         {
-            ICollection<ImportUserDto> usersDto = 
+            ICollection<ImportUserDto> usersDto =
                 JsonConvert.DeserializeObject<List<ImportUserDto>>(inputJson);
 
             ICollection<User> users = new List<User>();
@@ -93,7 +93,7 @@ namespace ProductShop
         // Problem 01: Import Data -> Import Categories
         public static string ImportCategories(ProductShopContext context, string inputJson)
         {
-            ICollection<ImportCategoryDto> categoryDtos = 
+            ICollection<ImportCategoryDto> categoryDtos =
                 JsonConvert.DeserializeObject<List<ImportCategoryDto>>(inputJson);
 
             ICollection<Category> categories = new List<Category>();
@@ -155,7 +155,7 @@ namespace ProductShop
                 .Where(u => u.ProductsSold.Any(p => p.BuyerId.HasValue))
                 .OrderBy(u => u.LastName)
                 .ThenBy(u => u.FirstName)
-                .ProjectTo<ExportUserProductsDto>()
+                .ProjectTo<ExportUserProductsDto>(mapper.ConfigurationProvider)
                 .ToArray();
 
             return JsonConvert.SerializeObject(users, Formatting.Indented);
@@ -165,7 +165,7 @@ namespace ProductShop
         public static string GetCategoriesByProductsCount(ProductShopContext context)
         {
             ExportCategoriesByProductsCountDto[] categories = context.Categories
-                .ProjectTo<ExportCategoriesByProductsCountDto>()
+                .ProjectTo<ExportCategoriesByProductsCountDto>(mapper.ConfigurationProvider)
                 .ToArray();
 
             return JsonConvert.SerializeObject(categories.OrderBy(c => c.ProductsCount), Formatting.Indented);
@@ -174,12 +174,24 @@ namespace ProductShop
         // Problem 02: Export Data -> Export Users and Products
         public static string GetUsersWithProducts(ProductShopContext context)
         {
-            ExportUserWithHisProductsDto[] users = context.Users
+            ExportUsersWithHisProductsDto[] users = context.Users
                 .Where(u => u.ProductsSold.Any(p => p.BuyerId.HasValue))
-                .OrderByDescending(u => u.ProductsSold.Count)
-                .ProjectTo<ExportUserWithHisProductsDto>()
+                .OrderByDescending(u => u.ProductsSold.Count(p => p.BuyerId.HasValue))
+                .ProjectTo<ExportUsersWithHisProductsDto>(mapper.ConfigurationProvider)
                 .ToArray();
 
-            return JsonConvert.SerializeObject(users, Formatting.Indented);
+            ExportUsersInfo setDto = new ExportUsersInfo()
+            {
+                Users = users
+            };
+
+
+            JsonSerializerSettings settings = new JsonSerializerSettings()
+            {
+                NullValueHandling = NullValueHandling.Ignore,
+            };
+
+            return JsonConvert.SerializeObject(setDto, Formatting.Indented, settings);
         }
+    }
 }

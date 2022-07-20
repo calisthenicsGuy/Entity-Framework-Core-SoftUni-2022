@@ -36,11 +36,12 @@ namespace ProductShop
                     mo => mo.MapFrom(s => s.CategoryProducts.Sum(p => p.Product.Price)));
 
 
-            this.CreateMap<Product, ExportProductsForSoldProductsOfUserDto>();
-            this.CreateMap<User, ExportAllProductsOfUserDto>()
-                .ForMember(d => d.Count, mo => mo.MapFrom(s => s.ProductsSold.Count));
-            this.CreateMap<User, ExportUserWithHisProductsDto>()
-                .ForMember(d => d.SoldProducts, mo => mo.MapFrom(s => s.ProductsSold));
+            this.CreateMap<Product, ExportSingleProductForUserDto>();
+            this.CreateMap<User, ExportSoldProductsForUserDto>()
+                .ForMember(d => d.Products, mo => mo.MapFrom(s => s.ProductsSold.Where(p => p.BuyerId.HasValue)));
+
+            this.CreateMap<User, ExportUsersWithHisProductsDto>()
+                .ForMember(d => d.SoldProducts, mo => mo.MapFrom(s => s));
         }
     }
 }
