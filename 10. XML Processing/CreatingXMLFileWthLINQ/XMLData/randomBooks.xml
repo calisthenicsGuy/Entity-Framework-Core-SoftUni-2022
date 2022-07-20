@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <book>
+    <title>Book1</title>
+    <price>20.00</price>
+  </book>
+  <book>
+    <title>Book2</title>
+    <price>18.00</price>
+  </book>
+  <book>
+    <title>Book3</title>
+    <price>22.00</price>
+  </book>
+</Library>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Library>
+  <book>
+    <title> #1 </title>
+    <price>$3.5</price>
+  </book>
+  <book>
+    <title> #2 </title>
+    <price>$4.5</price>
+  </book>
+  <book>
+    <title> #3 </title>
+    <price>$5.5</price>
+  </book>
+  <book>
+    <title> #4 </title>
+    <price>$6.5</price>
+  </book>
+  <book>
+    <title> #5 </title>
+    <price>$7.5</price>
+  </book>
+  <book>
+    <title> #6 </title>
+    <price>$8.5</price>
+  </book>
+  <book>
+    <title> #7 </title>
+    <price>$9.5</price>
+  </book>
+  <book>
+    <title> #8 </title>
+    <price>$10.5</price>
+  </book>
+  <book>
+    <title> #9 </title>
+    <price>$11.5</price>
+  </book>
+  <book>
+    <title> #10 </title>
+    <price>$12.5</price>
+  </book>
+  <book>
+    <title> #11 </title>
+    <price>$13.5</price>
+  </book>
+  <book>
+    <title> #12 </title>
+    <price>$14.5</price>
+  </book>
+  <book>
+    <title> #13 </title>
+    <price>$15.5</price>
+  </book>
+  <book>
+    <title> #14 </title>
+    <price>$16.5</price>
+  </book>
+  <book>
+    <title> #15 </title>
+    <price>$17.5</price>
+  </book>
+  <book>
+    <title> #16 </title>
+    <price>$18.5</price>
+  </book>
+  <book>
+    <title> #17 </title>
+    <price>$19.5</price>
+  </book>
+  <book>
+    <title> #18 </title>
+    <price>$20.5</price>
+  </book>
+  <book>
+    <title> #19 </title>
+    <price>$21.5</price>
+  </book>
+  <book>
+    <title> #20 </title>
+    <price>$22.5</price>
+  </book>
+  <book>
+    <title> #21 </title>
+    <price>$23.5</price>
+  </book>
+  <book>
+    <title> #22 </title>
+    <price>$24.5</price>
+  </book>
+  <book>
+    <title> #23 </title>
+    <price>$25.5</price>
+  </book>
+  <book>
+    <title> #24 </title>
+    <price>$26.5</price>
+  </book>
+  <book>
+    <title> #25 </title>
+    <price>$27.5</price>
+  </book>
+  <book>
+    <title> #26 </title>
+    <price>$28.5</price>
+  </book>
+  <book>
+    <title> #27 </title>
+    <price>$29.5</price>
+  </book>
+  <book>
+    <title> #28 </title>
+    <price>$30.5</price>
+  </book>
+  <book>
+    <title> #29 </title>
+    <price>$31.5</price>
+  </book>
+  <book>
+    <title> #30 </title>
+    <price>$32.5</price>
+  </book>
+  <book>
+    <title> #31 </title>
+    <price>$33.5</price>
+  </book>
+  <book>
+    <title> #32 </title>
+    <price>$34.5</price>
+  </book>
+  <book>
+    <title> #33 </title>
+    <price>$35.5</price>
+  </book>
+  <book>
+    <title> #34 </title>
+    <price>$36.5</price>
+  </book>
+  <book>
+    <title> #35 </title>
+    <price>$37.5</price>
+  </book>
+  <book>
+    <title> #36 </title>
+    <price>$38.5</price>
+  </book>
+  <book>
+    <title> #37 </title>
+    <price>$39.5</price>
+  </book>
+  <book>
+    <title> #38 </title>
+    <price>$40.5</price>
+  </book>
+  <book>
+    <title> #39 </title>
+    <price>$41.5</price>
+  </book>
+  <book>
+    <title> #40 </title>
+    <price>$42.5</price>
+  </book>
+  <book>
+    <title> #41 </title>
+    <price>$43.5</price>
+  </book>
+  <book>
+    <title> #42 </title>
+    <price>$44.5</price>
+  </book>
+  <book>
+    <title> #43 </title>
+    <price>$45.5</price>
+  </book>
+  <book>
+    <title> #44 </title>
+    <price>$46.5</price>
+  </book>
+  <book>
+    <title> #45 </title>
+    <price>$47.5</price>
+  </book>
+  <book>
+    <title> #46 </title>
+    <price>$48.5</price>
+  </book>
+  <book>
+    <title> #47 </title>
+    <price>$49.5</price>
+  </book>
+  <book>
+    <title> #48 </title>
+    <price>$50.5</price>
+  </book>
+  <book>
+    <title> #49 </title>
+    <price>$51.5</price>
+  </book>
+  <book>
+    <title> #50 </title>
+    <price>$52.5</price>
+  </book>
+  <book>
+    <title> #51 </title>
+    <price>$53.5</price>
+  </book>
+  <book>
+    <title> #52 </title>
+    <price>$54.5</price>
+  </book>
+  <book>
+    <title> #53 </title>
+    <price>$55.5</price>
+  </book>
+  <book>
+    <title> #54 </title>
+    <price>$56.5</price>
+  </book>
+  <book>
+    <title> #55 </title>
+    <price>$57.5</price>
+  </book>
+  <book>
+    <title> #56 </title>
+    <price>$58.5</price>
+  </book>
+  <book>
+    <title> #57 </title>
+    <price>$59.5</price>
+  </book>
+  <book>
+    <title> #58 </title>
+    <price>$60.5</price>
+  </book>
+  <book>
+    <title> #59 </title>
+    <price>$61.5</price>
+  </book>
+  <book>
+    <title> #60 </title>
+    <price>$62.5</price>
+  </book>
+  <book>
+    <title> #61 </title>
+    <price>$63.5</price>
+  </book>
+  <book>
+    <title> #62 </title>
+    <price>$64.5</price>
+  </book>
+  <book>
+    <title> #63 </title>
+    <price>$65.5</price>
+  </book>
+  <book>
+    <title> #64 </title>
+    <price>$66.5</price>
+  </book>
+  <book>
+    <title> #65 </title>
+    <price>$67.5</price>
+  </book>
+  <book>
+    <title> #66 </title>
+    <price>$68.5</price>
+  </book>
+  <book>
+    <title> #67 </title>
+    <price>$69.5</price>
+  </book>
+  <book>
+    <title> #68 </title>
+    <price>$70.5</price>
+  </book>
+  <book>
+    <title> #69 </title>
+    <price>$71.5</price>
+  </book>
+  <book>
+    <title> #70 </title>
+    <price>$72.5</price>
+  </book>
+  <book>
+    <title> #71 </title>
+    <price>$73.5</price>
+  </book>
+  <book>
+    <title> #72 </title>
+    <price>$74.5</price>
+  </book>
+  <book>
+    <title> #73 </title>
+    <price>$75.5</price>
+  </book>
+  <book>
+    <title> #74 </title>
+    <price>$76.5</price>
+  </book>
+  <book>
+    <title> #75 </title>
+    <price>$77.5</price>
+  </book>
+  <book>
+    <title> #76 </title>
+    <price>$78.5</price>
+  </book>
+  <book>
+    <title> #77 </title>
+    <price>$79.5</price>
+  </book>
+  <book>
+    <title> #78 </title>
+    <price>$80.5</price>
+  </book>
+  <book>
+    <title> #79 </title>
+    <price>$81.5</price>
+  </book>
+  <book>
+    <title> #80 </title>
+    <price>$82.5</price>
+  </book>
+  <book>
+    <title> #81 </title>
+    <price>$83.5</price>
+  </book>
+  <book>
+    <title> #82 </title>
+    <price>$84.5</price>
+  </book>
+  <book>
+    <title> #83 </title>
+    <price>$85.5</price>
+  </book>
+  <book>
+    <title> #84 </title>
+    <price>$86.5</price>
+  </book>
+  <book>
+    <title> #85 </title>
+    <price>$87.5</price>
+  </book>
+  <book>
+    <title> #86 </title>
+    <price>$88.5</price>
+  </book>
+  <book>
+    <title> #87 </title>
+    <price>$89.5</price>
+  </book>
+  <book>
+    <title> #88 </title>
+    <price>$90.5</price>
+  </book>
+  <book>
+    <title> #89 </title>
+    <price>$91.5</price>
+  </book>
+  <book>
+    <title> #90 </title>
+    <price>$92.5</price>
+  </book>
+  <book>
+    <title> #91 </title>
+    <price>$93.5</price>
+  </book>
+  <book>
+    <title> #92 </title>
+    <price>$94.5</price>
+  </book>
+  <book>
+    <title> #93 </title>
+    <price>$95.5</price>
+  </book>
+  <book>
+    <title> #94 </title>
+    <price>$96.5</price>
+  </book>
+  <book>
+    <title> #95 </title>
+    <price>$97.5</price>
+  </book>
+  <book>
+    <title> #96 </title>
+    <price>$98.5</price>
+  </book>
+  <book>
+    <title> #97 </title>
+    <price>$99.5</price>
+  </book>
+  <book>
+    <title> #98 </title>
+    <price>$100.5</price>
+  </book>
+  <book>
+    <title> #99 </title>
+    <price>$101.5</price>
+  </book>
+  <book>
+    <title> #100 </title>
+    <price>$102.5</price>
+  </book>
+</Library>
